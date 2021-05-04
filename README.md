@@ -39,8 +39,10 @@ api_login_check:
   path: /api/login_check
   controller: App\Controller\AuthController::login
   methods: [ POST ]
+  
   And here are Postman request examples &#8595;
-  ![1forRegister](https://user-images.githubusercontent.com/81144308/117012817-5bff5f00-ad00-11eb-9de0-5dd4bac0fb7c.png)
+  
+![1forRegister](https://user-images.githubusercontent.com/81144308/117012817-5bff5f00-ad00-11eb-9de0-5dd4bac0fb7c.png)
 ![2forLogin](https://user-images.githubusercontent.com/81144308/117012820-5d308c00-ad00-11eb-8f7e-0d271b7ed56e.png)
 ![3 2forCreate](https://user-images.githubusercontent.com/81144308/117012824-5d308c00-ad00-11eb-84e8-1ec04bb347df.png)
 ![3forCreate](https://user-images.githubusercontent.com/81144308/117012825-5dc92280-ad00-11eb-98c3-3b1f6630fcc7.png)
