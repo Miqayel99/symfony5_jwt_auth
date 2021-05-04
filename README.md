@@ -1,4 +1,3 @@
-"# symfony5_jwt_auth"
 Here is routes for  API &#8595;
 
 register:
