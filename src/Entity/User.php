@@ -9,8 +9,13 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
+
+
+
 /**
+ *
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ *
  */
 class User implements UserInterface
 {
@@ -242,4 +247,5 @@ class User implements UserInterface
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
     }
+
 }

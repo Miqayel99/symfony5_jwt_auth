@@ -81,7 +81,7 @@ class UserController extends AbstractController
         }
     }
 
-    public function edite(Request $request, UserPasswordEncoderInterface $passwordEncoder)
+    public function edit(Request $request, UserPasswordEncoderInterface $passwordEncoder)
     {
         try {
             $data = [];
@@ -160,6 +160,7 @@ class UserController extends AbstractController
         }
 
         $data = [
+            'userEmail'=>$user->getEmail(),
             'firstName' => $user->getFirstName(),
             'lastName' => $user->getLastName(),
             'Role' => $user->getRoles()

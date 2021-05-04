@@ -49,7 +49,7 @@ security:
     - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
     - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
     - { path: ^/user/create, roles: ROLE_ADMIN }
-    - { path: ^/user/edite, roles: ROLE_USER }
+    - { path: ^/user/edit, roles: ROLE_USER }
     - { path: ^/user/view, roles: ROLE_USER }
     - { path: ^/user/delete, roles: ROLE_USER }
 

@@ -30,7 +30,7 @@ class AuthController extends AbstractController
             // the keys correspond to the keys in the input array
             'firstName' => new Assert\Length(array('min' => 1)),
             'lastName' => new Assert\Length(array('min' => 1)),
-            'userPassword' => new Assert\Length(array('min' => 1)),
+            'userPassword' => new Assert\Length(array('min' => 4)),
             'userEmail' => new Assert\Email()
         ));
         $violations = $validator->validate($data, $constraint);
@@ -77,7 +77,7 @@ class AuthController extends AbstractController
             $validePassword = $passwordEncoder->isPasswordValid($userData, $request->request->get('password'));
 
             if (!$validePassword) {
-                return new JsonResponse(["error" => 'Wrong creadentials.'], 500);
+                return new JsonResponse(["error" => 'Wrong credentials.'], 500);
             }
 
             $token =  $JWTManager->create($userData);

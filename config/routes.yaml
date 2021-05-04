@@ -17,9 +17,9 @@ delete:
   controller: App\Controller\UserController::delete
   methods: [ POST ]
 
-edite:
-  path: /user/edite
-  controller: App\Controller\UserController::edite
+edit:
+  path: /user/edit
+  controller: App\Controller\UserController::edit
   methods: [ POST ]
 
 view:
